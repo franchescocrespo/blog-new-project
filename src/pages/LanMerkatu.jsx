@@ -4,7 +4,7 @@ import AntonImg from "../assets/anton.jpg";
 export const LanMerkatu = () => {
     return (
         <div className="container mx-auto">
-            <Chip className="mt-8">Gida</Chip>
+            <Chip className="mt-8 bg-[#fcd5ce]">Gida</Chip>
             <p className="my-8 md:text-4xl font-medium">Lan Merkatu Sarrera</p>
             <p className="my-8 md:text-lg">2024ko urtarrilaren 12a</p>
             <User

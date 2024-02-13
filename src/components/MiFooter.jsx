@@ -1,14 +1,17 @@
 import React from "react";
 import { Image, Link } from "@nextui-org/react";
-import logoImg from "../assets/logo_2.png";
+import logoImg from "../assets/logo_2-removebg.png";
 
 export const MiFooter = () => {
     return (
-        <footer className="container mx-auto mt-20 mb-10">
+        <footer className="px-60 py-5 mt-72 bg-[#ecf8f8]">
             <div>
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <Link href="/" className="flex items-center">
+                        <Link
+                            href="/blog-new-project"
+                            className="flex items-center"
+                        >
                             <Image src={logoImg} width={100} alt="Image Logo" />
                         </Link>
                     </div>

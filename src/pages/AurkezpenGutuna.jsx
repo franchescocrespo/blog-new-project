@@ -5,7 +5,7 @@ import TamaImg from "../assets/tama.jpg";
 export const AurkezpenGutuna = () => {
     return (
         <div className="container mx-auto">
-            <Chip className="mt-8">Artikulua</Chip>
+            <Chip className="mt-8 bg-[#b5e2fa]">Artikulua</Chip>
             <p className="my-8 md:text-4xl font-medium">Aurkezpen Gutuna</p>
             <p className="my-8 md:text-lg">2024ko urtarrilaren 12a</p>
             <User
@@ -110,6 +110,7 @@ export const AurkezpenGutuna = () => {
                 href="https://drive.google.com/file/d/1NyLQo8SaKIkJbqXDG4otI85J5n4O8A0J/view?usp=drive_link"
                 as={Link}
                 size="lg"
+                isExternal
                 showAnchorIcon
                 color="secondary"
                 variant="bordered"

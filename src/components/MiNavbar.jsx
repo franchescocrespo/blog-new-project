@@ -21,7 +21,7 @@ import {
     ModalFooter,
     useDisclosure,
 } from "@nextui-org/react";
-import logoImg from "../assets/logo_2.png";
+import logoImg from "../assets/logo_2-removebg.png";
 
 export const MiNavbar = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -44,6 +44,7 @@ export const MiNavbar = () => {
             isBordered
             isMenuOpen={isMenuOpen}
             onMenuOpenChange={setIsMenuOpen}
+            className="bg-[#eee4e1]"
         >
             <NavbarContent className="sm:hidden" justify="start">
                 <NavbarMenuToggle
@@ -53,7 +54,7 @@ export const MiNavbar = () => {
 
             <NavbarContent className="sm:hidden pr-3" justify="center">
                 <NavbarBrand>
-                    <Link color="foreground" href="/">
+                    <Link color="foreground" href="/blog-new-project">
                         <Image width={20} alt="Image Logo" src={logoImg} />
                     </Link>
                 </NavbarBrand>
@@ -61,12 +62,15 @@ export const MiNavbar = () => {
 
             <NavbarContent justify="end" className="hidden sm:flex gap-4">
                 <NavbarBrand>
-                    <Link color="foreground" href="/">
+                    <Link color="foreground" href="/blog-new-project">
                         <Image width={50} alt="Image Logo" src={logoImg} />
                     </Link>
                 </NavbarBrand>
                 <NavbarItem>
-                    <Link color="foreground" href="./lan-merkatu-sarrera">
+                    <Link
+                        color="foreground"
+                        href="/blog-new-project/lan-merkatu-sarrera"
+                    >
                         LAN MERKATU SARRERA
                     </Link>
                 </NavbarItem>
@@ -91,30 +95,42 @@ export const MiNavbar = () => {
                         }}
                     >
                         <DropdownItem key="autoscaling">
-                            <Link href="./curriculum" className="w-full">
+                            <Link
+                                href="/blog-new-project/curriculum"
+                                className="w-full"
+                            >
                                 {" "}
                                 Curriculum
                             </Link>
                         </DropdownItem>
                         <DropdownItem key="autoscaling">
-                            <Link href="./aholkuak" className="w-full">
+                            <Link
+                                href="/blog-new-project/aholkuak"
+                                className="w-full"
+                            >
                                 Aholkuak
                             </Link>
                         </DropdownItem>
                         <DropdownItem key="autoscaling">
-                            <Link href="./aurkezpen-gutuna" className="w-full">
+                            <Link
+                                href="/blog-new-project/aurkezpen-gutuna"
+                                className="w-full"
+                            >
                                 Aurkezpen Gutuna
                             </Link>
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link color="foreground" href="./inmigrazio">
+                    <Link
+                        color="foreground"
+                        href="/blog-new-project/inmigrazio"
+                    >
                         INMIGRAZIO-BALIABIDEAK
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="./podcast">
+                    <Link color="foreground" href="/blog-new-project/podcast">
                         PODKAST
                     </Link>
                 </NavbarItem>

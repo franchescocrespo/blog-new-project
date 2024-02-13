@@ -2,10 +2,8 @@ import React from "react";
 import {
     Chip,
     Divider,
-    Button,
     Card,
     CardHeader,
-    CardBody,
     CardFooter,
     Link,
     Image,
@@ -14,7 +12,7 @@ import {
 export const Inmigrazio = () => {
     return (
         <div className="container mx-auto">
-            <Chip className="mt-8">Gida</Chip>
+            <Chip className="mt-8 bg-[#fcd5ce]">Gida</Chip>
             <p className="my-8 md:text-4xl font-medium">
                 Inmigrazio Baliabideak
             </p>

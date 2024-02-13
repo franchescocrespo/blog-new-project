@@ -5,7 +5,25 @@ import MiAudio from "../components/MiAudio";
 export const Podcast = () => {
     return (
         <div className="container mx-auto">
-            <Chip className="mt-8">Podkast</Chip>
+            <Chip className="mt-8 bg-[#e7c6ff]">
+                <div className="flex items-center">
+                    <svg
+                        class="w-6 h-6 text-gray-800 dark:text-white"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke="currentColor"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M20 16v-4a8 8 0 1 0-16 0v4m16 0v2a2 2 0 0 1-2 2h-2v-6h2a2 2 0 0 1 2 2ZM4 16v2c0 1.1.9 2 2 2h2v-6H6a2 2 0 0 0-2 2Z"
+                        />
+                    </svg>
+                    <div className="ml-1">Podkast</div>
+                </div>
+            </Chip>
             <p className="my-8 md:text-4xl font-medium">Podkast</p>
             <p className="my-8 md:text-lg">2024ko urtarrilaren 12a</p>
             <Divider className="my-4" />
