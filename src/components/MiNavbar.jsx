@@ -28,17 +28,36 @@ export const MiNavbar = () => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     const menuItems = [
-        "Profile",
-        "Dashboard",
-        "Activity",
-        "Analytics",
-        "System",
-        "Deployments",
-        "My Settings",
-        "Team Settings",
-        "Help & Feedback",
-        "Log Out",
+        {
+            label: "LAN MERKATU SARRERA",
+            link: "/blog-new-project/lan-merkatu-sarrera",
+        },
+        {
+            label: "CURRICULUM",
+            link: "/blog-new-project/curriculum",
+        },
+        {
+            label: "Aholkuak",
+            link: "/blog-new-project/aholkuak",
+        },
+        {
+            label: "Aurkezpen Gutuna",
+            link: "/blog-new-project/aurkezpen-gutuna",
+        },
+        {
+            label: "INMIGRAZIO-BALIABIDEAK",
+            link: "/blog-new-project/inmigrazio",
+        },
+        {
+            label: "Podkast",
+            link: "/blog-new-project/podcast",
+        },
+        {
+            label: "Aldizkaria",
+            link: "/blog-new-project/magazine",
+        },
     ];
+
     return (
         <Navbar
             isBordered
@@ -263,18 +282,11 @@ export const MiNavbar = () => {
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
                         <Link
-                            className="w-full"
-                            color={
-                                index === 2
-                                    ? "warning"
-                                    : index === menuItems.length - 1
-                                    ? "danger"
-                                    : "foreground"
-                            }
-                            href="#"
+                            className="w-full uppercase"
+                            href={item.link}
                             size="lg"
                         >
-                            {item}
+                            {item.label}
                         </Link>
                     </NavbarMenuItem>
                 ))}
