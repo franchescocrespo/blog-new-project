@@ -2,7 +2,7 @@ import React from "react";
 
 export const Home = () => {
     return (
-        <div className="container mx-auto">
+        <div className="md:mx-20">
             <section className="bg-center bg-cover bg-no-repeat bg-[url('https://totalnewsagency.com/wp-content/uploads/2022/09/dia-del-inmigrante-por-que-se-celebra-cada-4-de-septiembre.jpg')] bg-gray-400 bg-blend-multiply">
                 <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
                     <p className="mb-4 text-4xl font-medium tracking-tight leading-none text-white md:text-5xl lg:text-8xl">

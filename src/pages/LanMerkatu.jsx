@@ -3,7 +3,7 @@ import { Chip, Divider, User, Link } from "@nextui-org/react";
 import AntonImg from "../assets/anton.jpg";
 export const LanMerkatu = () => {
     return (
-        <div className="container mx-auto">
+        <div className="md:mx-20">
             <Chip className="mt-8 bg-[#fcd5ce]">Gida</Chip>
             <p className="my-8 md:text-4xl font-medium">Lan Merkatu Sarrera</p>
             <p className="my-8 md:text-lg">2024ko urtarrilaren 12a</p>

@@ -4,7 +4,7 @@ import HizeaImg from "../assets/haizea.jpg";
 
 export const Aholkuak = () => {
     return (
-        <div className="container mx-auto">
+        <div className="md:mx-20">
             <Chip className="mt-8 bg-[#b5e2fa]">Artikulua</Chip>
             <p className="my-8 md:text-4xl font-medium">Aholkuak</p>
             <p className="my-8 md:text-lg">2024ko urtarrilaren 12a</p>

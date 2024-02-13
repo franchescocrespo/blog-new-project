@@ -4,7 +4,7 @@ import TamaImg from "../assets/tama.jpg";
 
 export const AurkezpenGutuna = () => {
     return (
-        <div className="container mx-auto">
+        <div className="md:mx-20">
             <Chip className="mt-8 bg-[#b5e2fa]">Artikulua</Chip>
             <p className="my-8 md:text-4xl font-medium">Aurkezpen Gutuna</p>
             <p className="my-8 md:text-lg">2024ko urtarrilaren 12a</p>

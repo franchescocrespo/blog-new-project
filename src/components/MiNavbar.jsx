@@ -129,11 +129,47 @@ export const MiNavbar = () => {
                         INMIGRAZIO-BALIABIDEAK
                     </Link>
                 </NavbarItem>
-                <NavbarItem>
-                    <Link color="foreground" href="/blog-new-project/podcast">
-                        PODKAST
-                    </Link>
-                </NavbarItem>
+
+                <Dropdown>
+                    <NavbarItem isActive>
+                        <DropdownTrigger>
+                            <Button
+                                disableRipple
+                                className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                                radius="sm"
+                                variant="light"
+                            >
+                                MULTIMEDIA
+                            </Button>
+                        </DropdownTrigger>
+                    </NavbarItem>
+                    <DropdownMenu
+                        aria-label="ACME features"
+                        className="w-[340px]"
+                        itemClasses={{
+                            base: "gap-4",
+                        }}
+                    >
+                        <DropdownItem key="autoscaling">
+                            <Link
+                                href="/blog-new-project/podcast"
+                                className="w-full"
+                            >
+                                Podkast
+                            </Link>
+                        </DropdownItem>
+                        <DropdownItem key="autoscaling">
+                            <Link
+                                href="/blog-new-project/magazine"
+                                className="w-full"
+                            >
+                                {" "}
+                                Aldizkaria
+                            </Link>
+                        </DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+
                 <NavbarItem>
                     <Button onPress={onOpen} color="foreground" href="#">
                         KONTAKTUAK

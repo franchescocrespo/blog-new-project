@@ -11,7 +11,7 @@ import {
 
 export const Inmigrazio = () => {
     return (
-        <div className="container mx-auto">
+        <div className="md:mx-20">
             <Chip className="mt-8 bg-[#fcd5ce]">Gida</Chip>
             <p className="my-8 md:text-4xl font-medium">
                 Inmigrazio Baliabideak

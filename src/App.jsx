@@ -8,6 +8,7 @@ import { LanMerkatu } from "./pages/LanMerkatu";
 import { Curriculum } from "./pages/Curriculum";
 import { Inmigrazio } from "./pages/Inmigrazio";
 import { Podcast } from "./pages/Podcast";
+import { Magazine } from "./pages/Magazine";
 
 export default function App() {
     const navigate = useNavigate();
@@ -19,6 +20,10 @@ export default function App() {
                     <Route
                         path="/blog-new-project/podcast"
                         element={<Podcast />}
+                    />
+                    <Route
+                        path="/blog-new-project/magazine"
+                        element={<Magazine />}
                     />
                     <Route
                         path="/blog-new-project/curriculum"
