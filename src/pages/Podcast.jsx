@@ -1,5 +1,6 @@
 import React from "react";
 import { Chip, Divider, User } from "@nextui-org/react";
+import MiAudio from "../components/MiAudio";
 
 export const Podcast = () => {
     return (
@@ -29,6 +30,10 @@ export const Podcast = () => {
                 Entzun dezagun Alexandra Cresporen kontakizun zintzoa eta azter
                 ditzagun Espainian bizitza berri baterako bidaiaren xehetasunak.
             </p>
+
+            <div className="flex justify-center">
+                <MiAudio />
+            </div>
         </div>
     );
 };

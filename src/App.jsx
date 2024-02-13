@@ -15,17 +15,29 @@ export default function App() {
         <NextUIProvider navigate={navigate}>
             <MiLayout>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/podcast" element={<Podcast />} />
-                    <Route path="/curriculum" element={<Curriculum />} />
-                    <Route path="/inmigrazio" element={<Inmigrazio />} />
-                    <Route path="/aholkuak" element={<Aholkuak />} />
+                    <Route path="/blog-new-project" element={<Home />} />
                     <Route
-                        path="/lan-merkatu-sarrera"
+                        path="/blog-new-project/podcast"
+                        element={<Podcast />}
+                    />
+                    <Route
+                        path="/blog-new-project/curriculum"
+                        element={<Curriculum />}
+                    />
+                    <Route
+                        path="/blog-new-project/inmigrazio"
+                        element={<Inmigrazio />}
+                    />
+                    <Route
+                        path="/blog-new-project/aholkuak"
+                        element={<Aholkuak />}
+                    />
+                    <Route
+                        path="/blog-new-project/lan-merkatu-sarrera"
                         element={<LanMerkatu />}
                     />
                     <Route
-                        path="/aurkezpen-gutuna"
+                        path="/blog-new-project/aurkezpen-gutuna"
                         element={<AurkezpenGutuna />}
                     />
                 </Routes>
